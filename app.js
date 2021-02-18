@@ -6,6 +6,10 @@ var logger = require('morgan');
 var formidableMiddleware = require('express-formidable');
 
 var indexRouter = require('./routes/index');
+var authRouter = require('./routes/auth');
+var courseRouter = require('./routes/course');
+var studentRouter = require('./routes/student');
+var enrollmentRouter = require('./routes/enrollment');
 
 var app = express();
 //database
@@ -27,6 +31,10 @@ app.use(formidableMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', indexRouter);
+app.use('/api/auth', authRouter);
+app.use('/api/course', courseRouter);
+app.use('/api/student', studentRouter);
+app.use('/api/enrollment', enrollmentRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

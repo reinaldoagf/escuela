@@ -7,7 +7,7 @@ const schema = new Schema(
         type: Schema.Types.ObjectId,
         ref: 'Student'
     }],
-    students: {
+    course: {
         type: Schema.Types.ObjectId,
         ref: 'Course'
     },

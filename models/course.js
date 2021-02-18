@@ -3,11 +3,7 @@ const { Schema } = mongoose;
 
 const schema = new Schema(
   {
-    name: { type: String, required: true },
-    students: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Student'
-    }],
+    name: { type: String, required: true }
   },
   {
     versionKey: false,
