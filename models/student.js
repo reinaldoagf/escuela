@@ -4,6 +4,7 @@ const { Schema } = mongoose;
 const schema = new Schema(
   {
     name: { type: String, required: true },
+    credit: { type: Number, required: false, select: false }
   },
   {
     versionKey: false,

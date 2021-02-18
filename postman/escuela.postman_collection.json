@@ -184,7 +184,14 @@
 			"data": [
 				{
 					"key": "name",
-					"value": "maiva",
+					"value": "laura",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "credit",
+					"value": "55",
 					"description": "",
 					"type": "text",
 					"enabled": true
@@ -195,7 +202,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1613666548731,
+			"time": 1613675111431,
 			"name": "http://localhost:3000/api/student/store",
 			"description": "",
 			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
@@ -364,7 +371,7 @@
 			"id": "fa6a488e-6bed-28fe-07f0-6d45232c8140",
 			"headers": "",
 			"headerData": [],
-			"url": "http://localhost:3000/api/enrollment/add/602e95cb259fb427eb4e0420/602e98f538c6cb29c971cef4",
+			"url": "http://localhost:3000/api/enrollment/add/602eba3ef0d638366cd51566/602eba24f0d638366cd51565",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -375,7 +382,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1613666566142,
+			"time": 1613675107989,
 			"name": "http://localhost:3000/api/enrollment/add/602e95cb259fb427eb4e0420/602e95e4259fb427eb4e0421",
 			"description": "",
 			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",

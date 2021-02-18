@@ -24,6 +24,7 @@ async function store(req,res){
     try{
         let element = await db.Student.create({
             name:req.fields.name,
+            credit:req.fields.credit?req.fields.credit:null,
         });
         return res.status(200).send({
             message:'Estudiante registrado satisfactoriamente',

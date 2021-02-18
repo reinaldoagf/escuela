@@ -37,7 +37,7 @@ async function add(req,res){
         
         return res.status(200).send({
             message:'Inscripción registrada satisfactoriamente',
-            data:await db.Enrollment.findById(element._id).populate('students').populate('course')
+            data:await db.Enrollment.findById(element._id).populate({path:'students',select:'name credit'}).populate('course')
         })
     }catch(error){
         console.log("error:",error)
