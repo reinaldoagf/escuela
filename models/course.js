@@ -4,8 +4,10 @@ const { Schema } = mongoose;
 const schema = new Schema(
   {
     name: { type: String, required: true },
-    email: { type: String, required: true },
-    password: { type: String, required: true, select: false },
+    students: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Student'
+    }],
   },
   {
     versionKey: false,
@@ -13,4 +15,4 @@ const schema = new Schema(
   }
 );
 
-module.exports = mongoose.model("User", schema);
+module.exports = mongoose.model("Course", schema);
