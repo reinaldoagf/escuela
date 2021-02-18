@@ -1,0 +1,110 @@
+{
+	"id": "90b5ac42-489f-a027-39b6-674fb47bab8c",
+	"name": "escuela",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "auth",
+			"description": "",
+			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
+			"order": [
+				"f62e2940-fa64-730e-ec56-09cf3eda042d",
+				"d6989ce3-80c1-91d8-ff24-73a746d51c29"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "8ab53622-4710-25f9-49e3-8d699aedfc7e"
+		}
+	],
+	"folders_order": [
+		"8ab53622-4710-25f9-49e3-8d699aedfc7e"
+	],
+	"timestamp": 1613604289723,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "d6989ce3-80c1-91d8-ff24-73a746d51c29",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/api/auth/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
+			"data": [
+				{
+					"key": "email",
+					"value": "reinaldoagf1@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "test12345",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://localhost:3000/api/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1613654615482,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "8ab53622-4710-25f9-49e3-8d699aedfc7e"
+		},
+		{
+			"id": "f62e2940-fa64-730e-ec56-09cf3eda042d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/api/auth/signup",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "reinaldo gonzalez",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "reinaldoagf1@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "test1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613654523811,
+			"name": "http://localhost:3000/api/auth/signup",
+			"description": "",
+			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
+			"responses": []
+		}
+	]
+}
