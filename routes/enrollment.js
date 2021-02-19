@@ -4,7 +4,7 @@ var router = express.Router();
 const _EnrollmentController = require('../controllers/EnrollmentController');
 
 /*cursos*/
+router.post("/add",_EnrollmentController.add)
 router.get("/all",_EnrollmentController.all)
-router.get("/add/:course_id/:student_id",_EnrollmentController.add)
 
 module.exports = router;

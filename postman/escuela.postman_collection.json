@@ -35,8 +35,8 @@
 			"description": "",
 			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
 			"order": [
-				"fa6a488e-6bed-28fe-07f0-6d45232c8140",
-				"fbfe78b2-ed27-e591-4cf0-9c952034cf5b"
+				"fbfe78b2-ed27-e591-4cf0-9c952034cf5b",
+				"b87a3ba9-d531-f73f-ddf3-6cacc36f9f17"
 			],
 			"owner": 0,
 			"folders_order": [],
@@ -114,66 +114,73 @@
 		},
 		{
 			"id": "29eee4de-a5c4-7417-201d-a123bc020087",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:3000/api/student/update/602e7c8ccf901f1905c8fa6d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/api/student/update/602eff9a7ea9b05694a18085",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
 			"method": "POST",
-			"data": [
-				{
-					"key": "name",
-					"value": "alonso",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
+			"data": [],
+			"dataMode": "raw",
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1613659543183,
+			"time": 1613692953762,
 			"name": "http://localhost:3000/api/student/update/602e7c8ccf901f1905c8fa6d",
 			"description": "",
 			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
-			"responses": []
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"mayerling\"\n}"
 		},
 		{
 			"id": "376f7955-5751-c6cf-5061-15797cb9c7b8",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:3000/api/course/update/602e8e9b39f8ad2307e4e91d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/api/course/update/602f01e23b0e30579a5bdd68",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
 			"method": "POST",
-			"data": [
-				{
-					"key": "name",
-					"value": "fisica",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
+			"data": [],
+			"dataMode": "raw",
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1613664006736,
+			"time": 1613693486909,
 			"name": "http://localhost:3000/api/course/update/602e7c8ccf901f1905c8fa6d",
 			"description": "",
 			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
-			"responses": []
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"fisica\"\n}"
 		},
 		{
 			"id": "7962fdbd-93d9-24da-008b-ac7cd76c44a9",
-			"headers": "",
-			"headerData": [],
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
 			"url": "http://localhost:3000/api/student/store",
 			"folder": "f05b40ca-dba8-6cfb-1200-af9b9de5200c",
 			"queryParams": [],
@@ -181,32 +188,47 @@
 			"pathVariables": {},
 			"pathVariableData": [],
 			"method": "POST",
-			"data": [
-				{
-					"key": "name",
-					"value": "laura",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "credit",
-					"value": "55",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
+			"data": [],
+			"dataMode": "raw",
 			"version": 2,
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1613675111431,
+			"time": 1613698537175,
 			"name": "http://localhost:3000/api/student/store",
 			"description": "",
 			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
-			"responses": []
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"laura\"\n}"
+		},
+		{
+			"id": "b87a3ba9-d531-f73f-ddf3-6cacc36f9f17",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/api/enrollment/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613700591685,
+			"name": "http://localhost:3000/api/enrollment/add",
+			"description": "",
+			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
+			"responses": [],
+			"rawModeData": "{\n\t\"course\":\"602f01e23b0e30579a5bdd68\",\n\t\"students\":[\n\t\t{\"id\":\"602eff527ea9b05694a18084\",\"credit\":10},\n\t\t{\"id\":\"602f15e6f792dc5df86df7ca\",\"credit\":10}\t\n\t]\n}"
 		},
 		{
 			"id": "c837afcc-a6e9-f91f-f81f-d2c917386c69",
@@ -231,162 +253,117 @@
 		},
 		{
 			"id": "d6989ce3-80c1-91d8-ff24-73a746d51c29",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:3000/api/auth/login",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
-			"data": [
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
 				{
-					"key": "email",
-					"value": "reinaldoagf1@gmail.com",
+					"key": "Content-Type",
+					"value": "application/json",
 					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "password",
-					"value": "test12345",
-					"description": "",
-					"type": "text",
 					"enabled": true
 				}
 			],
-			"dataMode": "params",
-			"name": "http://localhost:3000/api/auth/login",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1613654615482,
+			"url": "http://localhost:3000/api/auth/login",
+			"folder": "8ab53622-4710-25f9-49e3-8d699aedfc7e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
 			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "8ab53622-4710-25f9-49e3-8d699aedfc7e"
+			"time": 1613693360848,
+			"name": "http://localhost:3000/api/auth/login",
+			"description": "",
+			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\":\"simon@gmail.com\",\n\t\"password\":\"test1234\"\n}"
 		},
 		{
 			"id": "e364144a-bd59-fba7-65b5-e1debcb9c8ff",
 			"headers": "",
 			"headerData": [],
-			"url": "http://localhost:3000/api/student/delete/602e7db8cf901f1905c8fa6e",
+			"url": "http://localhost:3000/api/student/delete/602eff9a7ea9b05694a18085",
+			"folder": "f05b40ca-dba8-6cfb-1200-af9b9de5200c",
 			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "DELETE",
-			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
 			"data": null,
 			"dataMode": "params",
-			"name": "http://localhost:3000/api/student/delete/602e7db8cf901f1905c8fa6e",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1613659607076,
 			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "f05b40ca-dba8-6cfb-1200-af9b9de5200c"
+			"time": 1613693364434,
+			"name": "http://localhost:3000/api/student/delete/602e7db8cf901f1905c8fa6e",
+			"description": "",
+			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
+			"responses": []
 		},
 		{
 			"id": "e5bcbc62-ab88-b587-240c-8b195a136f6c",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:3000/api/course/store",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
-			"data": [
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
 				{
-					"key": "name",
-					"value": "matematica",
+					"key": "Content-Type",
+					"value": "application/json",
 					"description": "",
-					"type": "text",
 					"enabled": true
 				}
 			],
-			"dataMode": "params",
-			"name": "http://localhost:3000/api/course/store",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1613663897673,
+			"url": "http://localhost:3000/api/course/store",
+			"folder": "f6991b7c-ff7e-3723-1635-dac794807d7c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
 			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "f6991b7c-ff7e-3723-1635-dac794807d7c"
+			"time": 1613693408244,
+			"name": "http://localhost:3000/api/course/store",
+			"description": "",
+			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"matematica\"\n}"
 		},
 		{
 			"id": "f62e2940-fa64-730e-ec56-09cf3eda042d",
-			"headers": "",
-			"headerData": [],
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
 			"url": "http://localhost:3000/api/auth/signup",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
 			"method": "POST",
-			"data": [
-				{
-					"key": "name",
-					"value": "reinaldo gonzalez",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "email",
-					"value": "reinaldoagf1@gmail.com",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "password",
-					"value": "test1234",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
+			"data": [],
+			"dataMode": "raw",
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1613654523811,
+			"time": 1613693292082,
 			"name": "http://localhost:3000/api/auth/signup",
 			"description": "",
 			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
-			"responses": []
-		},
-		{
-			"id": "fa6a488e-6bed-28fe-07f0-6d45232c8140",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:3000/api/enrollment/add/602eba3ef0d638366cd51566/602eba24f0d638366cd51565",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": null,
-			"dataMode": "params",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1613675107989,
-			"name": "http://localhost:3000/api/enrollment/add/602e95cb259fb427eb4e0420/602e95e4259fb427eb4e0421",
-			"description": "",
-			"collectionId": "90b5ac42-489f-a027-39b6-674fb47bab8c",
-			"responses": []
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"simon\",\n\t\"email\":\"simon@gmail.com\",\n\t\"password\":\"test1234\"\n}"
 		},
 		{
 			"id": "fbfe78b2-ed27-e591-4cf0-9c952034cf5b",

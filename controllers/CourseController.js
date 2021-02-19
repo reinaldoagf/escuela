@@ -23,7 +23,7 @@ async function getElement(req,res,next){
 async function store(req,res){
     try{
         let element = await db.Course.create({
-            name:req.fields.name,
+            name:req.body.name,
         });
         return res.status(200).send({
             message:'Curso registrado satisfactoriamente',
@@ -40,7 +40,7 @@ async function store(req,res){
 }
 async function update(req,res,next){
     try{
-        let element = await db.Course.findByIdAndUpdate(req.params.id,req.fields);
+        let element = await db.Course.findByIdAndUpdate(req.params.id,req.body);
         if(!element) return res.status(404).send({message:`El curso no existe`});
         return res.status(200).send({
             message:'Curso actualizado satisfactoriamente',

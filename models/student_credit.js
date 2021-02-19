@@ -3,14 +3,11 @@ const { Schema } = mongoose;
 
 const schema = new Schema(
   {
-    students: [{
+    student: {
         type: Schema.Types.ObjectId,
-        ref: 'StudentCredit'
-    }],
-    course: {
-        type: Schema.Types.ObjectId,
-        ref: 'Course'
+        ref: 'Student'
     },
+    credit: { type: Number, required: false }
   },
   {
     versionKey: false,
@@ -18,4 +15,4 @@ const schema = new Schema(
   }
 );
 
-module.exports = mongoose.model("Enrollment", schema);
+module.exports = mongoose.model("StudentCredit", schema);

@@ -6,9 +6,9 @@ const salt = bcrypt.genSaltSync(10);
 async function singUp(req,res){
     try{
         const user = await db.User.create({
-            name:req.fields.name,
-            email:req.fields.email,
-            password:bcrypt.hashSync(req.fields.password, salt)
+            name:req.body.name,
+            email:req.body.email,
+            password:bcrypt.hashSync(req.body.password, salt)
         })
         return res.status(200).send({
             message:'Registro satisfactorio',
@@ -24,9 +24,9 @@ async function singUp(req,res){
 }
 async function logIn(req,res){
     try{
-        let user= await db.User.findOne({email:req.fields.email}).select('password');
+        let user= await db.User.findOne({email:req.body.email}).select('password');
         if(!user) return res.status(404).send({message:'Usuario no encontrado'});
-        if(!bcrypt.compareSync(req.fields.password, user.password)) return res.status(404).send({message:'Contraseña incorrecta'});
+        if(!bcrypt.compareSync(req.body.password, user.password)) return res.status(404).send({message:'Contraseña incorrecta'});
         
         res.status(200).send({
             message:'Inicio de sesión satisfactorio',
